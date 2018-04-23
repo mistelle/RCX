@@ -1,7 +1,7 @@
 /*global
 	$,
 	document,
-	console
+	Game
 */
 
 $(document).ready(
@@ -11,10 +11,11 @@ $(document).ready(
 	}
 );
 
-function start(difficulty) {
+function start(diff) {
 	"use strict";
 	
 	$("#main").hide();
 	$("#game").show();
-	console.log(difficulty);
+	difficulty = diff;
+	Game.start(diff);
 }
