@@ -10,28 +10,7 @@ $(document).ready(
 	}
 );
 
-function show() {
-	"use strict";
-	
-	$("#main").show();
-	$("#game").show();
-}
-
-function hide() {
-	"use strict";
-	
+function start(difficulty) {
 	$("#main").hide();
-	$("#game").hide();
-}
-
-function toggle() {
-	"use strict";
-	
-	if($("#main").is(":visible")){
-		$("#main").hide();
-		$("#game").show();
-	} else {
-		$("#main").show();
-		$("#game").hide();
-	}
+	$("#game").show();
 }
