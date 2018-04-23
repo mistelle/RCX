@@ -1,6 +1,7 @@
 /*global
 	$,
-	document
+	document,
+	console
 */
 
 $(document).ready(
@@ -11,6 +12,9 @@ $(document).ready(
 );
 
 function start(difficulty) {
+	"use strict";
+	
 	$("#main").hide();
 	$("#game").show();
+	console.log(difficulty);
 }
