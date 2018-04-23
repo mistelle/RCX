@@ -1,6 +1,14 @@
 /*global
-	$
+	$,
+	document
 */
+
+$(document).ready(
+	function () {
+		"use strict";
+		$("#game").hide();
+	}
+);
 
 function show() {
 	"use strict";
