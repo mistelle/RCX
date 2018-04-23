@@ -23,3 +23,15 @@ function hide() {
 	$("#main").hide();
 	$("#game").hide();
 }
+
+function toggle() {
+	"use strict";
+	
+	if($("#main").is(":visible")){
+		$("#main").hide();
+		$("#game").show();
+	} else {
+		$("#main").show();
+		$("#game").hide();
+	}
+}
